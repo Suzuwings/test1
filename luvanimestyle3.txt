@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav-container{
+    width: 100%;
+    background-color: #9370DB;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    /*My logo only takes up 0.2 parts of my navigational pane*/
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo {
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    list-style: none;
+    text-align: center;
+    justify-self: end;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-links:hover {
+    color: #85ee84;
+}
+
+.nav-links-button {
+    background-color:#85ee84; 
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.nav-links-button:hover {
+    background-color:#85ee84;
+    color: gray;
+    padding: 10px 20px;
+}
+
+.menu .bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
